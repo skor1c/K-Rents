@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stil.css">
+    <link rel="icon" href="Slike/fav.ico" type="image/x-icon">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <title>K-Rents</title>
+</head>
+<body>
+    <div class="stoposto">
+      <div id="header-wrapper">
+  		<header>
+  			<a href="index.html"><img src="Slike/LogoW.png" alt="Logo"></a>
+  			<nav class="menu">
+          <a href="#onama">O nama</a><a href="#automobili">Automobili</a><a href="#rezervacija">Rezervacija</a><a href="#kontakt">Kontakt</a>
+        </nav>
+        <nav class="hamburgermenu">
+          <a href="#onama">O nama</a><a href="#automobili">Automobili</a><a href="#rezervacija">Rezervacija</a><a href="#kontakt">Kontakt</a>
+        </nav>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+  		</header>
+  	  </div>
+            <section id="pocetna">
+              <div id="tekst">
+                <h2>NAJPOUZDANIJI RENT-A-CAR<br>U NOVOM SADU</h2>
+                <h3>Neograničena kilometraža i Kasko osiguranje.</h3>
+                <h3>Rezervacija bez depozita.</h3>
+              </div>
+              <div id="dugme"><a href="#rezervacija">Rezerviši odmah</a></div>
+          </section>
+    </div>
+      <main>
+        <section id="onama">
+            <h1>O nama</h1>
+            <p>Ukoliko tražite najpovoljnije vozilo, sa neograničenom kilometražom, a da pri tome ne ostavljate depozit, K-Rents - Novi Sad je jedini rent-a-car u gradu koji Vam pruža tu mogućnost.<br><br>
+                Kasko osigurana, redovno održavana i servisirana vozila iz naše ponude su Vam uvek na raspolaganju.<br><br>
+                Bez obzira na to da li putujete zbog posla ili zadovoljstva, u našoj agenciji ćete uvek pronaći automobil koji odgovara svim vašim potrebama.<br><br>
+                Bezbednost i zadovoljstvo klijenata su nam uvek na prvom mestu.</p>
+            <div id="zeleno">
+                <div class="hvr">Dostupni 24/7</div>
+                <div class="hvr">Pristupačna<br>lokacija</div>
+                <div class="hvr">Rezervacija<br>bez depozita</div>
+                <div class="hvr">Kasko osigurana<br>vozila</div>
+            </div>  
+        </section>
+              <section id="automobili">
+                <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+                <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+                <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+                <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+                <div class="slider-pagination">
+                  <label for="slider_1" class="page1"></label>
+                  <label for="slider_2" class="page2"></label>
+                  <label for="slider_3" class="page3"></label>
+                  <label for="slider_4" class="page4"></label>
+                </div>
+                <div class="slider slide-1">
+                  <div class="pozadina"></div>
+                  <img class="auto" src="Slike/porsche_911.png" alt="Auto">
+                  <div class="slider-content">
+                    <h2>PORSCHE 911</h2>
+                    <h4>Coupe</h4>
+                    <img class="karakteristike" src="Slike/porsche_karakteristike.png" alt="Karakteristike">
+                    <button type="button" class="rezervisi" name="button" onclick="window.location.href='#rezervacija';">50€/dan</button>
+                  </div>
+                  <div class="number-pagination"></div>
+                  <div class="pravougaonik"></div>
+              </div>
+                <div class="slider slide-2">
+                  <div class="pozadina"></div>
+                  <img class="auto" src="Slike/bmw_x6.png" alt="Auto">
+                  <div class="slider-content">
+                    <h2>BMW X6</h2>
+                    <h4>Crossover</h4>
+                    <img class="karakteristike" src="Slike/bmw_karakteristike.png" alt="Karakteristike">
+                    <button type="button" class="rezervisi" name="button" onclick="window.location.href='#rezervacija';">35€/dan</button>
+                  </div>
+                  <div class="number-pagination"></div>
+                  <div class="pravougaonik"></div>
+                </div>
+                <div class="slider slide-3">
+                  <div class="pozadina"></div>
+                  <img class="auto" src="Slike/audi_r8.png" alt="Auto">
+                  <div class="slider-content">
+                    <h2>AUDI R8</h2>
+                    <h4>Coupe</h4>
+                    <img class="karakteristike" src="Slike/audi_karakteristike.png" alt="Karakteristike">
+                    <button type="button" class="rezervisi" name="button" onclick="window.location.href='#rezervacija';">45€/dan</button>
+                  </div>
+                  <div class="number-pagination"></div>
+                  <div class="pravougaonik"></div>
+                </div>
+                <div class="slider slide-4">
+                    <div class="pozadina"></div>
+                    <img class="auto" src="Slike/la_ferrari.png" alt="Auto">
+                    <div class="slider-content">
+                      <h2>La FERRARI</h2>
+                      <h4>Coupe</h4>
+                      <img class="karakteristike" src="Slike/ferrari_karakteristike.png" alt="Karakteristike">
+                      <button type="button" class="rezervisi" name="button" onclick="window.location.href='#rezervacija';">60€/dan</button>
+                    </div>
+                    <div class="number-pagination"></div>
+                    <div class="pravougaonik"></div>
+                </div>
+              </section>
+        <section id="rezervacija">
+          <h1>Rezervacija</h1>
+          <form class="flexbox">
+            <div class="flexbox-item">
+              <select>
+                <option disabled selected hidden>Izaberi vozilo</option>
+                <option>Porsche 911</option>
+                <option>BMW X6</option>
+                <option>Audi R8</option>
+                <option>La Ferrari</option>
+              </select>
+              <select>
+                <option disabled selected hidden>Mesto preuzimanja vozila</option>
+                <option>Marka Miljanova 14, Novi Sad</option>
+                <option>Bulevar Evrope 20, Novi Sad</option>
+              </select>
+              <select>
+                <option disabled selected hidden>Mesto vraćanja vozila</option>
+                <option>Marka Miljanova 14, Novi Sad</option>
+                <option>Bulevar Evrope 20, Novi Sad</option>
+              </select>
+              <input type="date" name="Datum preuzimanja" required>
+              <input type="date" name="Datum vraćanja" required>
+              </div>
+              <div class="flexbox-item">
+              <input type="text" placeholder="Vaše ime">
+              <input type="text" placeholder="Vaše prezime">
+              <input type="tel" placeholder="Broj telefona">
+              <input type="email" placeholder="E-mail adresa">
+              <textarea rows="3" placeholder="Dodatni zahtevi..."></textarea>
+              <a id="Btn">Potvrda rezervacije</a>
+            </div>
+          </form>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <p>Vaša rezervacija je uspešno kreirana.<br>Hvala Vam što koristite usluge K-Rentsa.</p>
+              <a href="#header-wrapper" class="povratak">Povratak na početnu stranicu</a>
+            </div>
+          </div>
+        </section>
+        <section id="kontakt">
+          <h1>Kontakt</h1>
+                <div class="kontaktf">
+                  <div class="kontaktflex">
+                    <div class="cola">
+                      <img src="Slike/telefon.svg" alt="Telefon">
+                      <br>
+                      <img src="Slike/mejl.svg" alt="E-mail">
+                      <br>
+                      <img src="Slike/lokacija.svg" alt="Lokacija">
+                    </div>
+                    <div class="colb">
+                      <p>+381 60 000 000</p>
+                      <p>info@k-rents.com</p>
+                      <p>Marka Miljanova 14, Novi Sad</p>
+                    </div>
+                  </div>
+                  <iframe src="https://maps.google.com/maps?q=marka%20miljanova%2014,%20Novi%20Sad&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+          </section>
+        <footer><p>© 2021. Copyright by K-Rents | GRID 2021. | GI35/2017 </p></footer>
+        <button onclick="topFunction()" id="gore" title="Vrati se na početak"><svg width="41" height="36" viewBox="0 0 41 36">
+        <path id="Polygon_4" data-name="Polygon 4" d="M17.893,4.578a3,3,0,0,1,5.214,0L38.446,31.515A3,3,0,0,1,35.839,36H5.161a3,3,0,0,1-2.607-4.485Z"/></svg>
+        </button>
+    </main>
+    <script src="js/hamburger.js"></script>
+    <script>
+      var modal = document.getElementById("myModal");     
+      var btn = document.getElementById("Btn");      
+      var a = document.getElementsByClassName("povratak")[0];   
+      btn.onclick = function() {
+        modal.style.display = "block"
+      }      
+      a.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      <script>
+        var gore = document.getElementById("gore");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            gore.style.display = "block";
+          } else {
+            gore.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>
